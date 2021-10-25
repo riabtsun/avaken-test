@@ -1,0 +1,30 @@
+@import './variables';
+@import './header';
+@import './examples';
+@import './services';
+@import './about';
+@import './contacts';
+
+body {
+	padding-top: 108px;
+	font-family: 'Poppins';
+}
+.header-menu__background-show{
+	padding-top: 0;
+	overflow: hidden;
+	.header-wrapper{
+		position: fixed;
+	}
+	.header-menu{
+		top: 76px;
+	}
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	max-width: 1220px;
+}
+ul {
+	list-style-type: none;
+}

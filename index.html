@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Avaken</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./scss/main.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="header-wrapper">
+					<div class="container">
+						<div class="header-row">
+							<svg class="header-logo" width="150" aria-label="logo">
+								<use href="./img/sprite-icons.svg#icon-logo-black"></use>
+							</svg>
+							<div class="header-menu" data-menu>
+								<ul class="header-menu__list">
+									<li class="header-menu__item">
+										<a class="header-menu__link" href="#">Home</a>
+									</li>
+									<li class="header-menu__item">
+										<a class="header-menu__link" href="#">About</a>
+									</li>
+									<li class="header-menu__item">
+										<a class="header-menu__link" href="#">Services</a>
+									</li>
+									<li class="header-menu__item">
+										<a class="header-menu__link" href="#">News</a>
+									</li>
+									<li class="header-menu__item">
+										<a class="header-menu__link" href="#">Contacts</a>
+									</li>
+								</ul>
+							</div>
+							<button class="header-btn" data-btn>
+								<svg width="22" height="22" aria-label="mobile menu">
+									<use
+										class="header-btn__icon-open"
+										href="./img/sprite-icons.svg#icon-header-open"
+									></use>
+									<use
+										class="header-btn__icon-close"
+										href="./img/sprite-icons.svg#icon-header-close"
+									></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="header-menu__background"></div>
+		</header>
+		<main>
+			<section class="examples">
+				<div class="container">
+					<div class="examples-slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img
+									class="examples-img__mobile"
+									src="./img/slide-mobile.jpg"
+									alt="examples images"
+								/>
+								<img
+									class="examples-img__desktop"
+									src="./img/slide.jpg"
+									alt="examples images"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									class="examples-img__mobile"
+									src="./img/slide-mobile.jpg"
+									alt="examples images"
+								/>
+								<img
+									class="examples-img__desktop"
+									src="./img/slide.jpg"
+									alt="examples images"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									class="examples-img__mobile"
+									src="./img/slide-mobile.jpg"
+									alt="examples images"
+								/>
+								<img
+									class="examples-img__desktop"
+									src="./img/slide.jpg"
+									alt="examples images"
+								/>
+							</div>
+						</div>
+						<div class="swiper-nav">
+							<div class="button-prev"></div>
+							<div class="swiper-nav__line"></div>
+							<div class="button-next"></div>
+						</div>
+					</div>
+					<div class="examples-content">
+						<div class="examples-content__wrapper">
+							<h1 class="examples-content__title">
+								Let’s build something great!
+							</h1>
+							<button
+								type="button"
+								class="examples-button__form button-next button-text"
+							>
+								Learn More
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="container">
+					<p class="services__name section__title--name">Services</p>
+					<div class="services-content">
+						<div class="services-content__text">
+							<h2 class="services-content__title section-content--title">
+								Full-service digital capabilities from end to end.
+							</h2>
+							<a href="#" class="services-content__link section-content--link"
+								>See all services</a
+							>
+						</div>
+						<div class="services-card__wrapper">
+							<div class="services-card"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="container">
+					<p class="about__name section__title--name">About us</p>
+					<div class="about-content">
+						<div class="about-content__text">
+							<h2 class="about-content__title section-content--title">
+								Sit bibendum id proin felis auctor erat ac.
+							</h2>
+							<div class="info-wrapper">
+								<p class="about-info">
+									Aliquam egestas hac morbi eu. Eros, elit est diam mattis
+									laoreet faucibus lectus. Cursus sed tellus augue morbi
+									pulvinar. Consequat nisi, integer potenti consectetur. Sed leo
+									massa morbi iaculis viverra.
+									<br />
+								</p>
+								<a href="#" class="about-content__link section-content--link"
+									>Read more</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+  <div class="container">
+    <div class="contacts-body">
+      <div class="contacts-img">
+    <img
+      class="contacts-img__desktop"
+      src="./img/office-desk.jpg"
+      alt="Contacts"
+      
+    />
+    <img
+      class="contacts-img__mobile"
+      src="./img/ofiice.jpg"
+      alt="Contacts"
+      
+    />
+      </div>
+    <div class="contacts-block">
+      <form class="contacts-form">
+        <h2 class="contacts-form__title">Write Me.</h2>
+        <h3 class="contacts-form__paragraf paragraf--text">
+          Sit et vulputate posuere id diam ac eget lacinia enim. Id congue sapien </br>libero sed.
+          Aliquet amet eget placerat facilisis leo, sit consequat.
+        </h3>
+        <div class="contacts-form__block">
+          <div>
+            <label class="contacts-form__label">Full Name</label>
+            <input
+              class="contacts-form__input-name"
+              type="text"
+              name="name"
+              title="The name can only consist of letters, apostrophes, dashes and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan, etc required"
+            />
+          </div>
+          <div>
+            <label class="contacts-form__label">Phone</label>
+            <input
+              class="contacts-form__input-phone"
+              type="tel"
+              name="tel"
+              title="Phone number must be 11-12 digits long and can contain numbers, spaces, dashes, pot-bellied brackets and can start with +"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <label class="contacts-form__label">Email Address</label>
+          <input
+            class="contacts-form__input-email"
+            type="text"
+            name="email"
+            title="Enter your email "
+            required
+          />
+        </div>
+        <div>
+          <label class="contacts-form__label">Message</label>
+          <input class="contacts-form__input-message" type="text" name="text" />
+        </div>
+        <button type="button" class="button button-text contacts-button__form examples-button__form">
+          Send message
+        </button>
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+
+		</main>
+
+		<script src="./index.js"></script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	</body>
+</html>

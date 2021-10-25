@@ -1,0 +1,155 @@
+.examples {
+	padding-top: 15px;
+	padding-bottom: 50px;
+	@media screen and (min-width: $desktop) {
+		padding-top: 40px;
+		padding-bottom: 100px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-slider {
+		position: relative;
+		width: 188px;
+		height: 320px;
+		margin-left: 0;
+		z-index: 0;
+		@media screen and (min-width: $desktop) {
+			width: 600px;
+			height: 708px;
+		}
+	}
+	&-img__desktop {
+		display: none;
+		@media screen and (min-width: $desktop) {
+			display: block;
+		}
+	}
+	&-img__mobile {
+		display: block;
+		@media screen and (min-width: $desktop) {
+			display: none;
+		}
+	}
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&__wrapper {
+			max-width: 182px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			@media screen and (min-width: $desktop) {
+				max-width: fit-content;
+			}
+		}
+		&__title {
+			font-family: 'Poppins';
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 120%;
+			margin-bottom: 32px;
+			@media screen and (min-width: 420px) {
+				font-size: 30px;
+			}
+			@media screen and (min-width: $desktop) {
+				font-weight: bold;
+				font-size: 90px;
+				line-height: 98px;
+				letter-spacing: -0.015em;
+				margin-bottom: 45px;
+			}
+		}
+	}
+	&-button__form {
+		display: block;
+		width: fit-content;
+		font-family: 'Poppins';
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.2;
+		padding: 10px 43px 10px 16px;
+		text-align: center;
+		letter-spacing: 1px;
+		border: none;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $purple;
+		background-image: url('../img/arr-right-white.svg');
+		background-repeat: no-repeat;
+		background-position: 150px 13px;
+		svg {
+			fill: $white;
+		}
+		@media screen and (min-width: 420px) {
+			font-size: 14px;
+		}
+		@media screen and (min-width: $desktop) {
+			padding: 15px 45px 15px 24px;
+			background-position: 136px 17px;
+		}
+	}
+}
+
+.swiper-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: #f8f8f8;
+	border: 2px solid $dark;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	width: 109px;
+	height: 50px;
+	right: 0px;
+	@media screen and(min-width: $desktop) {
+		width: 170px;
+		height: 70px;
+		right: 0px;
+	}
+	&__line {
+		background-color: $dark;
+		height: 1px;
+		position: absolute;
+		z-index: 2;
+		width: 34px;
+		bottom: 24px;
+		right: 38px;
+		transform: rotate(90deg);
+		opacity: 0.2;
+		@media screen and (min-width: $desktop) {
+			width: 54px;
+			bottom: 34px;
+			right: 58px;
+		}
+	}
+	.button-prev {
+		background-image: url('../img/arr-left.svg');
+		background-size: cover;
+		height: 12px;
+		width: 14px;
+		&:hover {
+			cursor: pointer;
+		}
+		@media screen and (min-width: $desktop) {
+			height: 18px;
+			width: 20px;
+		}
+	}
+	.button-next {
+		background-image: url('../img/arr-right.svg');
+		background-size: cover;
+		height: 12px;
+		width: 14px;
+		&:hover {
+			cursor: pointer;
+		}
+		@media screen and (min-width: $desktop) {
+			height: 18px;
+			width: 20px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.about-content__text {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.about-content__title {
+	margin-top: 0;
+}
+.about-info {
+	margin: 0;
+}
+.about-content__link{
+  margin-top: 20px;
+}
+.info-wrapper {
+	max-width: 467px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}

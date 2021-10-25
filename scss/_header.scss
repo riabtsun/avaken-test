@@ -1,0 +1,146 @@
+nav {
+	position: relative;
+	z-index: 1;
+}
+.header-wrapper {
+	background-color: $dark;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	left: 0;
+	top: 0;
+	@media screen and (min-width: $desktop) {
+		padding: 30px 0;
+	}
+	.header-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 48px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		@media screen and (min-width: $desktop) {
+			padding: 0;
+		}
+		.header-logo {
+			display: block;
+			fill: $white;
+		}
+		.header-logo.active {
+			fill: $dark;
+		}
+		.header-btn {
+			width: 22px;
+			height: 22px;
+			background-color: inherit;
+			border: none;
+			fill: $white;
+			display: contents;
+			&__icon-close {
+				display: none;
+			}
+			@media screen and (min-width: $desktop) {
+				display: none;
+			}
+		}
+		.header-button.header-menu__open {
+			.header-button__icon-close {
+				display: block;
+			}
+			.header-button__icon-open {
+				display: none;
+			}
+		}
+	}
+}
+.header-wrapper.active {
+	background-color: $white;
+	.header-menu {
+		box-shadow: none;
+	}
+	.header-btn {
+		fill: $dark;
+	}
+}
+.header-menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 100%;
+	height: auto;
+	background-color: $white;
+	box-shadow: 0px 15px 20px -7px rgba(0, 0, 0, 0.2);
+	z-index: -1;
+	@media screen and (min-width: $desktop) {
+		position: relative;
+		display: flex;
+		width: auto;
+		left: auto;
+		right: 15px;
+		background-color: transparent;
+		z-index: 0;
+	}
+	&__list {
+		padding: 194px 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@media screen and (min-width: $desktop) {
+			display: flex;
+			flex-direction: row;
+			padding: 0;
+			z-index: 2;
+		}
+	}
+	&__item {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 20px;
+		color: $dark;
+		margin: 36px 0;
+		&:first-of-type {
+			margin-top: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: $desktop) {
+			font-size: 18px;
+			z-index: 2;
+			margin: 0 56px 0 0;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+	&__link {
+		text-decoration: none;
+		&:hover {
+			cursor: pointer;
+			color: $purple;
+		}
+		@media screen and(min-width: $desktop) {
+			color: $white;
+		}
+	}
+}
+.header-menu__list.active {
+	.header-menu__link {
+		color: $dark;
+	}
+}
+.header-menu.header-menu__open {
+	display: block;
+}
+.header-menu__background-show {
+	.header-menu__background {
+		background-color: #000;
+		opacity: 0.1;
+		height: 100%;
+		width: 100vw;
+		overflow: hidden;
+	}
+}
